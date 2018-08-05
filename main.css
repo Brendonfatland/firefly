@@ -1,0 +1,59 @@
+
+ .important{
+  border: solid red !important;
+}
+
+.highlight{
+  border: solid red !important;
+}
+
+
+
+
+.jumbotron{
+  margin-top: -20px;
+}
+
+
+
+.color{
+  border: solid;
+  height: 500px;
+}
+
+img{
+
+}
+img#fflogo {
+  width: 200px;
+padding-top: 20px;
+/* padding-left: 0px; */
+float: left;
+padding-bottom: 20px;
+}
+
+/* Style the active class, and buttons on mouse-over */
+.active, .btn:hover {
+    background-color: #666;
+    color: white;
+}
+
+.none{
+  color: grey;
+  background-color: orange;
+}
+.container{
+  background-color: #fe5000;
+      width: 100% !important;
+}
+
+
+.navbar-header {
+    float: right !important;
+    display: block !important;
+}
+.navbar-toggle{
+  float: right !important;
+  display: block !important;
+      margin-top: 40px !important;
+}
