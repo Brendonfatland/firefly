@@ -31,4 +31,8 @@ $(document).ready(function(){
         }
     });
   });
+
+  $(".displayMoreButton").click(function(){
+    $(".displayMoreArea").toggle();
+});
 })
