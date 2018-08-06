@@ -40,6 +40,7 @@
 <div class="jumbotron text-center">
   <h1>FireFly</h1>
   <p>Your one stop, Chromebook SHOP!</p>
+  <p>Subscribe today to get 10% off your next order!</p>
   <form>
     <div class="input-group">
       <input type="email" class="form-control" size="50" placeholder="Email Address" required>
@@ -59,69 +60,71 @@
     </div>
     <div class="col-sm-8 slideanim">
       <div class="row">
-        <div class="col-sm-12 form-group text-center">
+        <div class="col-sm-4">
+          <h5>Computer Type:</h5>
           <select class="form-control" id="type" name="type" required>
-            <option selected>Computer Type</option>
-            <option value="chrome">Chrome Central</option>
+            <option value="chrome" selected>Chrome Central</option>
             <option value="new" disabled>New & Recertified</option>
             <option value="classroom" disabled>Interactive Classroom</option>
             <option value="monitors" disabled>Monitors and Accessories</option>
             <option value="virtual" disabled>Virtual Desktop</option>
             <option value="specials" disabled>Specials</option>
           </select>
-         </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-6 form-group">
+        </div>
+        <div class="col-sm-4">
+          <h5>Make:</h5>
           <select class="form-control" id="make" name="make" required>
-            <option selected>Make</option>
-            <option>Lenovo</option>
+            <option selected>Lenovo</option>
             <option>Dell</option>
             <option>Acer</option>
             <option>Google</option>
             <option>Asus</option>
           </select>
         </div>
-        <div class="col-sm-6 form-group">
-          <select class="form-control" id="modelLenovo" name="type" required style="display:none">
-            <option selected>Model</option>
-            <option></option>
+        <div class="col-sm-4">
+          <h5>Model:</h5>
+          <select class="form-control" id="modelLenovo" name="typeAll" required style="display:block">
+            <option selected> Something</option>
             <option>New & Recertified</option>
             <option>Interactive Classroom</option>
             <option>Monitors and Accessories</option>
             <option>Virtual Desktop</option>
             <option>Specials</option>
           </select>
-          <select class="form-control" id="modelDell" name="type" required style="display:none">
-            <option selected>Model</option>
-            <option></option>
+          <select class="form-control" id="modelLenovo" name="typeLenovo" required style="display:none">
+            <option selected> Something</option>
             <option>New & Recertified</option>
             <option>Interactive Classroom</option>
             <option>Monitors and Accessories</option>
             <option>Virtual Desktop</option>
             <option>Specials</option>
           </select>
-          <select class="form-control" id="modelAcer" name="type" required style="display:none">
-            <option selected>Model</option>
-            <option></option>
+          <select class="form-control" id="modelDell" name="typeDell" required style="display:none">
+            <option selected> Something</option>
             <option>New & Recertified</option>
             <option>Interactive Classroom</option>
             <option>Monitors and Accessories</option>
             <option>Virtual Desktop</option>
             <option>Specials</option>
           </select>
-          <select class="form-control" id="modelGoogle" name="type" required style="display:none">
-            <option selected>Model</option>
-            <option></option>
+          <select class="form-control" id="modelAcer" name="typeAcer" required style="display:none">
+            <option selected> Something</option>
             <option>New & Recertified</option>
             <option>Interactive Classroom</option>
             <option>Monitors and Accessories</option>
             <option>Virtual Desktop</option>
             <option>Specials</option>
           </select>
-          <select class="form-control" id="modelAsus" name="type" required style="display:none">
-            <option selected>Model</option>
-            <option></option>
+          <select class="form-control" id="modelGoogle" name="typeGoogle" required style="display:none">
+            <option selected> Something</option>
+            <option>New & Recertified</option>
+            <option>Interactive Classroom</option>
+            <option>Monitors and Accessories</option>
+            <option>Virtual Desktop</option>
+            <option>Specials</option>
+          </select>
+          <select class="form-control" id="modelAsus" name="typeAsus" required style="display:none">
+            <option selected> Something</option>
             <option>New & Recertified</option>
             <option>Interactive Classroom</option>
             <option>Monitors and Accessories</option>
@@ -129,26 +132,64 @@
             <option>Specials</option>
           </select>
         </div>
+
       </div>
+      <div class="row">
+        <div class="col-sm-4 form-group ">
 
-      <div class="row displayMoreArea">
-        <div class="col-sm-12">
+         </div>
+        <div class="col-sm-4 form-group">
 
+        </div>
+        <div class="col-sm-4 form-group">
 
         </div>
       </div>
 
+      <div class="row displayMoreArea" style="display:block">
+        <div class="col-sm-4">
+          <h5>Condition</h5>
+          <select class="form-control" id="condition" name="condition">
+            <option selected>New</option>
+            <option>Used</option>
+            <option>Certified</option>
+          </select>
+        </div>
+        <div class="col-sm-8 text-center">
+          <h5>Price</h5>
+          <div class="row text-center">
+            <div class="col-sm-5 ">
+
+            <input type="text" class="form-control" id="usr" placeholder="min">
+          </div>
+          <div class="col-sm-2">
+            <p>to</p>
+          </div>
+          <div class="col-sm-5">
+              <input type="text" class="form-control" id="usr" placeholder="max">
+          </div>
+
+
+        </div>
+      </div>
+</div>
 
       <div class="row">
-        <div class="col-sm-12 form-group">
+        <div class="col-sm-12">
           <div class="col-sm-5">
           </div>
-          <button class="btn btnOrange pull-left " type="submit">Search</button>
+          <button class="btn btnOrange text-center btn-lg " type="submit">Search</button>
+          </div>
+        </div>
+        <div class="row">
+        <div class="col-sm-2">
           <button type="button" class="btn pull-right displayMoreButton">More Options</button>
         </div>
       </div>
-    </div>
+
+
   </div>
+</div>
 </div>
 
 

@@ -28,9 +28,9 @@ select{
   padding-right: 29px;
 
 }
-button.btn.btnOrange.pull-left {
+button.btn.btnOrange.text-center.btn-lg {
     background-color: #f4511e !important;
-    
+
 }
 
 
