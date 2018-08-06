@@ -28,9 +28,9 @@ select{
   padding-right: 29px;
 
 }
-.btnOrange{
-  background-color: #f4511e !important;
-  }
+button.btn.btnOrange.pull-left {
+    background-color: #f4511e !important;
+}
 
 
 .jumbotron {
