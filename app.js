@@ -1,37 +1,34 @@
 $(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
 
-  $('#usersForm').submit(function(event) {
-          //prevent sending to server.
-          event.preventDefault();
+      // Store hash
+      var hash = this.hash;
 
-          // grab the value from user Input.
-          var searchTerm = $('.something').val();
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
 
-          getRequest(searchTerm);
-});
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
 
-function getRequest(searchTerm) {
-      $.getJSON('https://www.googleapis.com/youtube/v3/search',
-      {
-        "part": 'snippet',  // https://developers.google.com/youtube/v3/code_samples/javascript
-        "key": 'AIzaSyD7-WGeIgUQkx6t5izSX5chzcATfx9d52s',  //Personal Google API Key
-        "q": searchTerm,  //Value gatherd from UserInput
-        "type": 'video'
-      },
-        function (dataFromAPI) {
-            showResults(dataFromAPI.items);
-        });
-	}
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
 
-  function showResults(results){
-
-	  	$.each(results, function(index, value){
-        var url= "https://www.youtube.com/embed/" + value.id.videoId ;
-       var thumbnail =   '<iframe src="'+ url + '"></iframe>'  ;
- $(".usersSearchResults").append(thumbnail);
-       console.log(value);
-
-	 	});
-	}
-
-});
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})

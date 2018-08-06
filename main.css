@@ -28,11 +28,14 @@ select{
   padding-right: 29px;
 
 }
+
+
 .jumbotron {
     background-color: #f4511e !important;
     color: #fff !important;
-    padding: 100px 25px !important;
+    padding: 130px 25px !important;
     font-family: Montserrat, sans-serif !important;
+         margin-bottom: 0px !important;
 }
 .container-fluid {
     padding: 60px 50px;
