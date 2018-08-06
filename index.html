@@ -33,6 +33,11 @@
   height: inherit;
     margin-top: -15px;
 }
+select{
+    text-align-last: center;
+    padding-right: 29px;
+
+}
   .jumbotron {
       background-color: #f4511e;
       color: #fff;
@@ -209,9 +214,9 @@
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#about">ABOUT</a></li>
         <li><a href="#services">SERVICES</a></li>
-        <li><a href="#portfolio">PORTFOLIO</a></li>
+        <li><a href="#support">SUPPORT</a></li>
         <li><a href="#pricing">PRICING</a></li>
-        <li><a href="#contact">CONTACT</a></li>
+        <li><a href="#search">SEARCH</a></li>
       </ul>
     </div>
   </div>
@@ -232,28 +237,89 @@
 
 
 <!-- Container (Contact Section) -->
-<div id="contact" class="container-fluid bg-grey">
-  <h2 class="text-center">CONTACT</h2>
+<div id="search" class="container-fluid bg-grey">
+  <h2 class="text-center">Find your perfect Chromebook!</h2>
   <div class="row">
-    <div class="col-sm-5">
-      <p>Contact us and we'll get back to you within 24 hours.</p>
-      <p><span class="glyphicon glyphicon-map-marker"></span> Chicago, US</p>
-      <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
-      <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
+    <div class="col-sm-2">
     </div>
-    <div class="col-sm-7 slideanim">
+    <div class="col-sm-8 slideanim">
+      <div class="row">
+        <div class="col-sm-12 form-group text-center">
+          <select class="form-control" id="type" name="type" required>
+            <option selected>Computer Type</option>
+            <option>Chrome Central</option>
+            <option>New & Recertified</option>
+            <option>Interactive Classroom</option>
+            <option>Monitors and Accessories</option>
+            <option>Virtual Desktop</option>
+            <option>Specials</option>
+          </select>
+         </div>
+      </div>
       <div class="row">
         <div class="col-sm-6 form-group">
-          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+          <select class="form-control" id="make" name="make" required>
+            <option selected>Make</option>
+            <option>Lenovo</option>
+            <option>Dell</option>
+            <option>Acer</option>
+            <option>Google</option>
+            <option>Asus</option>
+          </select>
         </div>
         <div class="col-sm-6 form-group">
-          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+          <select class="form-control" id="modelLenovo" name="type" required style="display:none">
+            <option selected>Model</option>
+            <option></option>
+            <option>New & Recertified</option>
+            <option>Interactive Classroom</option>
+            <option>Monitors and Accessories</option>
+            <option>Virtual Desktop</option>
+            <option>Specials</option>
+          </select>
+          <select class="form-control" id="modelLenovo" name="type" required style="display:none">
+            <option selected>Model</option>
+            <option></option>
+            <option>New & Recertified</option>
+            <option>Interactive Classroom</option>
+            <option>Monitors and Accessories</option>
+            <option>Virtual Desktop</option>
+            <option>Specials</option>
+          </select>
+          <select class="form-control" id="modelLenovo" name="type" required style="display:none">
+            <option selected>Model</option>
+            <option></option>
+            <option>New & Recertified</option>
+            <option>Interactive Classroom</option>
+            <option>Monitors and Accessories</option>
+            <option>Virtual Desktop</option>
+            <option>Specials</option>
+          </select>
+          <select class="form-control" id="modelLenovo" name="type" required style="display:none">
+            <option selected>Model</option>
+            <option></option>
+            <option>New & Recertified</option>
+            <option>Interactive Classroom</option>
+            <option>Monitors and Accessories</option>
+            <option>Virtual Desktop</option>
+            <option>Specials</option>
+          </select>
+          <select class="form-control" id="modelLenovo" name="type" required style="display:none">
+            <option selected>Model</option>
+            <option></option>
+            <option>New & Recertified</option>
+            <option>Interactive Classroom</option>
+            <option>Monitors and Accessories</option>
+            <option>Virtual Desktop</option>
+            <option>Specials</option>
+          </select>
         </div>
       </div>
       <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
       <div class="row">
         <div class="col-sm-12 form-group">
-          <button class="btn btn-default pull-right" type="submit">Send</button>
+          <button class="btn btn-success " type="submit">Search</button>
+          <button type="button" class="btn pull-right">More Options</button>
         </div>
       </div>
     </div>
