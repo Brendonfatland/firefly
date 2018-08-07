@@ -35,17 +35,6 @@ $(document).ready(function(){
   $(".displayMoreButton").click(function(){
     $(".displayMoreArea").toggle();
 });
-/* $('#make option').each(function() {
-
-    if (this.selected.val() == "dell") {
-       $("#modelDell").show();
-    }
-}); */
-
-
-/* function changeModel(selectedMake){
-
-} */
 
 $('#make').change(function(){
     selection = $(this).val();
@@ -71,44 +60,82 @@ $('#make').change(function(){
             $('.model').hide();
              $('#modelAsus').show();
               break;
-
     }
   });
 
-var selectedMake = $('#make option').val();
-console.log(selectedMake);
 
-/*  $( "#make" ).change(function() {
-  alert( "Handler for .change() called." );
+
+
+
+$(".btnOrange").click(function(){
+selection2 = $('.model').val();
+
+
+switch(selection2)
+{
+  case 'AllL':
+   $('.searchResults').hide();
+    $('.AllL').show();
+    break;
+    case 'AllD':
+     $('.searchResults').hide();
+      $('.AllD').show();
+      break;
+      case 'AllAcer':
+       $('.searchResults').hide();
+        $('.AllD').show();
+        break;case 'AllAsus':
+         $('.searchResults').hide();
+          $('.AllD').show();
+          break;case 'AllGoogle':
+           $('.searchResults').hide();
+            $('.AllD').show();
+            break;
+  case '500e':
+   $('.searchResults').hide();
+    $('.500e').show();
+    break;
+  case 'n42':
+  $('.searchResults').hide();
+   $('.n42').show();
+    break;
+    case 'n23':
+    $('.searchResults').hide();
+     $('.n23').show();
+      break;
+      case '120s':
+      $('.searchResults').hide();
+       $('.120s').show();
+        break;
+        case 'e5480t':
+        $('.searchResults').hide();
+         $('.e5480t').show();
+          break;
+          case 'e5480nt':
+          $('.searchResults').hide();
+           $('.e5480nt').show();
+            break;
+            case '7010':
+            $('.searchResults').hide();
+             $('.7010').show();
+              break;
+              case '709':
+              $('.searchResults').hide();
+               $('.709').show();
+                break;
+
+    case 'acer':
+    $('.searchResults').hide();
+     $('.acer').show();
+      break;
+      case 'google':
+      $('.searchResults').hide();
+       $('.google').show();
+        break;
+        case 'asus':
+        $('.searchResults').hide();
+         $('.asus').show();
+          break;
+}
 });
-*/
-
-/*  $("#make").change(function(){
-        $(this).css("background-color", "#D6D6FF");
-    });
-
-  /* $('#make option').each(function() {
-    if($(this).is(':selected')){
-      $().show();
-    }
-
-    if ($( "#make" ).val().selected){
-      console.log(this);
-    } */
-
-
-  /*  $( "#make" ).change(function() {
-        var str = "";
-        $( "select option:selected" ).each(function() {
-          str += $( this ).text() + " ";
-        });
-        $( "div" ).text( str );
-      })
-      .trigger( "change" );
-      */
-
-      var el = document.querySelector("#make > option:nth-child(4)");
-      console.log(el);
-
-
 })

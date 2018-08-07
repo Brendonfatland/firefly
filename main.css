@@ -31,7 +31,8 @@ select{
 button.btn.btnOrange.text-center.btn-lg {
     background-color: #f4511e !important;
         margin-top: 20px;
-
+        color:white;
+        border-color: grey;
 }
 
 
@@ -193,4 +194,10 @@ footer .glyphicon {
   .logo {
       font-size: 150px;
   }
+}
+
+
+.modal-header{
+  background-color: #f4511e;
+    color: white;
 }

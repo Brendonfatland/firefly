@@ -86,45 +86,31 @@
         <div class="col-sm-4">
           <h5>Model:</h5>
           <select class="form-control model" id="modelLenovo" name="typeAll" required style="display:block">
-            <option selected> Something</option>
-            <option>New & Recertified</option>
-            <option>Interactive Classroom</option>
-            <option>Monitors and Accessories</option>
-            <option>Virtual Desktop</option>
-            <option>Specials</option>
+            <option selected value="AllL">All</option>
+            <option value="500e">500e</option>
+            <option value="n42">N42-20</option>
+            <option value="n23">N23</option>
+            <option value="120s">Ideapad 120s</option>
           </select>
 
           <select class="form-control model" id="modelDell" name="typeDell" required style="display:none">
-            <option selected> Something</option>
-            <option>New & Recertified</option>
-            <option>Interactive Classroom</option>
-            <option>Monitors and Accessories</option>
-            <option>Virtual Desktop</option>
-            <option>Specials</option>
+            <option selected value="AllD">All</option>
+            <option value="e5480t">E5480 Touchscreen</option>
+            <option value="e5480nt">E5480 Nontouchscreen</option>
+            <option value="7010">7010</option>
+            <option value="790">790 CORE</option>
           </select>
           <select class="form-control model" id="modelAcer" name="typeAcer" required style="display:none">
-            <option selected> Something</option>
-            <option>New & Recertified</option>
-            <option>Interactive Classroom</option>
-            <option>Monitors and Accessories</option>
-            <option>Virtual Desktop</option>
-            <option>Specials</option>
+            <option selected value="AllAcer">All</option>
+            <option value="laptop">Laptop</option>
           </select>
           <select class="form-control model" id="modelGoogle" name="typeGoogle" required style="display:none">
-            <option selected> Something</option>
-            <option>New & Recertified</option>
-            <option>Interactive Classroom</option>
-            <option>Monitors and Accessories</option>
-            <option>Virtual Desktop</option>
-            <option>Specials</option>
+            <option selected value="AllGoogle">All</option>
+            <option value="pixel">Pixel</option>
           </select>
           <select class="form-control model" id="modelAsus" name="typeAsus" required style="display:none">
-            <option selected> Something</option>
-            <option>New & Recertified</option>
-            <option>Interactive Classroom</option>
-            <option>Monitors and Accessories</option>
-            <option>Virtual Desktop</option>
-            <option>Specials</option>
+            <option selected value="AllAsus">All</option>
+            <option value="vivo"> Vivobook</option>
           </select>
         </div>
       </div>
@@ -136,7 +122,7 @@
         <div class="col-sm-4 form-group">
         </div>
       </div>
-      <div class="row displayMoreArea" style="display:block">
+      <div class="row displayMoreArea" style="display:none">
         <div class="col-sm-4">
           <h5>Condition</h5>
           <select class="form-control" id="condition" name="condition">
@@ -188,24 +174,102 @@
 
         <!-- Modal Header -->
         <div class="modal-header">
-          <h4 class="modal-title">Modal Heading</h4>
+          <h4 class="modal-title text-center">Your Results</h4>
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
 
         <!-- Modal body -->
         <div class="modal-body">
-          Modal body..
+          <div class="container-fluid">
+          <div class="AllL lenovo searchResults">
+            <div class="row">
+              <div class="col-md-6 text-center">
+                <h2>Lenovo 500e</h2>
+                <img class="" src="lenovo500e.jpg" alt="500e">
+              </div>
+              <div class="col-md-6 text-center">
+                <h4>Specs</h4>
+                <table class="table table-bordered .table-responsive-sm">
+
+                  <tbody>
+                    <tr>
+                      <td>Processor:</td>
+                      <td>Intel® Celeron® N3450U Processor (1.10GHz 2MB)</td>
+
+                    </tr>
+                    <tr>
+                      <td>Graphics</td>
+                      <td>Intel® HD Graphics 500</td>
+
+                    </tr>
+                    <tr>
+                      <td>Operating System</td>
+                      <td>Google Chrome</td>
+
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="AllD lenovo searchResults">
+            <p> All lenovo selected </p>
+          </div>
+          <div class="AllAcer lenovo searchResults">
+            <p> All lenovo selected </p>
+          </div>
+          <div class="AllAsus lenovo searchResults">
+            <p> All lenovo selected </p>
+          </div>
+          <div class="AllGoogle lenovo searchResults">
+            <p> All lenovo selected </p>
+          </div>
+          <div class="500e lenovo searchResults">
+            <p>lenovo selected 500e</p>
+          </div>
+          <div class="n42 lenovo searchResults">
+            <p>lenovo selected n42</p>
+          </div>
+          <div class="n23 lenovo searchResults">
+            <p>lenovo selected n23</p>
+          </div>
+          <div class="120s lenovo searchResults">
+            <p >lenovo selected 120s</p>
+          </div>
+          <div class="e5480t dell searchResults">
+            <p>Dell Selected e5480t</p>
+          </div>
+          <div class="e5480nt dell searchResults">
+            <p>Dell Selected e5480nt</p>
+          </div>
+          <div class="7010 dell searchResults">
+            <p>Dell Selected 7010</p>
+          </div>
+          <div class="709 dell searchResults">
+            <p>Dell Selected 709</p>
+          </div>
+          <div class="asus searchResults">
+            <p>asus selected vivo</p>
+          </div>
+          <div class="acer searchResults">
+            <p>acer selected Laptop</p>
+          </div>
+          <div class="google searchResults">
+            <p>google selected pixel</p>
+          </div>
         </div>
+      </div>
 
         <!-- Modal footer -->
         <div class="modal-footer">
+          <button type="button" class="btn">Add to Cart</button>
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
         </div>
 
       </div>
     </div>
   </div>
-
 </div>
 
 
